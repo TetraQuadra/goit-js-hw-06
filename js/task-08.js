@@ -2,8 +2,8 @@ const loginFormEl = document.querySelector(".login-form");
 loginFormEl.addEventListener("submit", (e) => {
   e.preventDefault();
   if (
-    loginFormEl.elements.email === "" ||
-    loginFormEl.elements.password === ""
+    loginFormEl.elements.email.value === "" ||
+    loginFormEl.elements.password.value === ""
   ) {
     alert("Пожалуйста, заполните все поля");
   } else {
