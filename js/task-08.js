@@ -9,7 +9,7 @@ loginFormEl.addEventListener("submit", (e) => {
   } else {
     const formData = {
       email: loginFormEl.elements.email.value,
-      password: loginFormEl.elements.value,
+      password: loginFormEl.elements.password.value,
     };
     console.log(formData);
     loginFormEl.reset();
